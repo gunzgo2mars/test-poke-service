@@ -20,5 +20,6 @@ make tidy
 ```
 
 API list
-[Auth](./docs/auth.md)
-[Pokemon](./docs/poke.md)
+
+- [Auth](./docs/auth.md)
+- [Pokemon](./docs/poke.md)
