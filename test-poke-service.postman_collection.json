@@ -1,0 +1,186 @@
+{
+	"info": {
+		"_postman_id": "f85b01ef-9222-427b-95a0-4c6bc507e19c",
+		"name": "test-poke-service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5840267"
+	},
+	"item": [
+		{
+			"name": "Health Checker",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/checkhealth",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"checkhealth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"topgunz31075\",\n    \"password\": \"test$password\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"topgunz31075\",\n    \"password\": \"test$password\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Pokemon by name",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDE1NjQxMTIsImlhdCI6MTc0MTQ3NzcxMiwidXVpZCI6IjhmY2E5MTA3LWVkZWMtNDk3MC1iOTBjLWQyYTFiNzlhNGYyMiJ9.HB8GKTS36lcvixGi_1g8KdzzX9Op83Tc1NJGA0XFQhw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/pokemon/pikachu",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"pokemon",
+						"pikachu"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Pokemon Ability",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDE1NjQxMTIsImlhdCI6MTc0MTQ3NzcxMiwidXVpZCI6IjhmY2E5MTA3LWVkZWMtNDk3MC1iOTBjLWQyYTFiNzlhNGYyMiJ9.HB8GKTS36lcvixGi_1g8KdzzX9Op83Tc1NJGA0XFQhw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/pokemon/pikachu/ability",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"pokemon",
+						"pikachu",
+						"ability"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Random Pokemon",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDE1NjQxMTIsImlhdCI6MTc0MTQ3NzcxMiwidXVpZCI6IjhmY2E5MTA3LWVkZWMtNDk3MC1iOTBjLWQyYTFiNzlhNGYyMiJ9.HB8GKTS36lcvixGi_1g8KdzzX9Op83Tc1NJGA0XFQhw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/pokemon/random",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"pokemon",
+						"random"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

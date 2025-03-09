@@ -1,0 +1,22 @@
+app:
+  name: "test-poke-service"
+  port: "8080"
+
+log:
+  env: "local"
+
+mysql:
+  address: "mysql"
+  port: "3306"
+
+redis:
+  address: "redis"
+  port: "6379"
+
+http:
+  pokeapi:
+    base_url: "https://pokeapi.co/api/v2/pokemon"
+    retry_wait_time: 5s
+    retry_max_wait_time: 10s
+    retry_count: 3
+    timeout: 30s
